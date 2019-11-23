@@ -1,0 +1,349 @@
+body{
+	font-family: 'BPG Nino Mtavruli';
+	background-color: #a2daff;
+}
+main{
+	min-height: calc(100vh - 248px);
+	background-color: #fff;
+}
+.nav-bar{
+	padding: 10px 0;
+	background-color: #fff;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+.lang-bar{
+	margin-right: 48px;
+}
+.lang{
+	margin-right: 5px;
+}
+.lang:last-child{
+	margin-right: 0;
+}
+.lang img{
+	max-width: 25px;
+}
+.doc-img img{
+	width: 100%;
+	height: 100%;
+}
+.section{
+	margin-top: 15px;
+}
+.img-block{
+	padding-left: 20px;
+}
+.img-block img{
+	width: 100%;
+}
+.title-box{
+	position: relative;
+	width: 230px;
+	height: 30px;
+	margin: auto;
+	text-align: center;
+	line-height: 33px;
+	box-shadow: 0px 8px 3px -7px rgba(0, 0, 0, 0.75);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 20px
+}
+.title-box:after{
+	position: absolute;
+    bottom: -10px;
+    left: 50%;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-width: 5px 0 5px 10px;
+    right: 0;
+    margin-right: 30px;
+    border-color: transparent transparent transparent #000000;
+    border-style: solid;
+    transform: rotate(90deg);
+}
+.title-h{
+	font-size: 20px;
+	color: rgb(255, 60, 60);
+}
+.page-navigation{
+	margin: 20px 0;
+}
+.info-a{
+	font-size: 16px;
+	color: #ff0000;
+	line-height: 1.5;
+}
+.info-a:hover{
+	color: #ff0000;
+}
+.span-info{
+	font-family: 'SansSerifFLF';
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.img-line img{
+	width: 100%;
+}
+.section-2{
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+.priv-img img{
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.message-h{
+	font-size: 26px;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+}
+.message-p{
+	font-size: 17px;
+	line-height: 1.5;
+}
+.bg-block{
+	height: 100px;
+	background-color: #fff;
+	background-size: 100%;
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+
+}
+.footer-title{
+	padding-left: 20px;
+}
+.footer-a{
+	color: rgb(255, 60, 60);
+	font-size: 16px;
+	line-height: 1.5;
+}
+.footer-a:hover{
+	color: rgb(255, 60, 60);
+}
+.footer-icon{
+	background-color: #fff;
+}
+.medical-gallery{
+	padding: 50px 0;
+}
+.img-med{
+	width: 100%;
+	height: 250px;
+}
+.img-med img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.gallery-thumbs{
+	margin-top: 10px;
+}
+.second-block{
+	height: 100px;
+}
+.gallery-top .swiper-button-next,.gallery-top .swiper-button-prev{
+	color: #ef5ea2;
+}
+.gallery-top .swiper-button-disabled{
+	opacity: 1;
+}
+.swiper-button-prev:after,.swiper-button-next:after{
+	content: '';
+}
+.swiper-button-prev i,.swiper-button-next i{
+	font-size: 25px;
+}
+.about-h{
+	color: #000;
+	font-size: 22px;
+	font-family: 'BPG Nino Mtavruli';
+}
+.about-p{
+	color: #000;
+	font-size: 16px;
+	font-family: 'BPG Nino Mtavruli';
+	line-height: 1.5;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+/*<!-- video -->*/
+$base-height: 377px;
+$base-dimension: 16px;
+$base-border-radius: 12px;
+$base-button-size: 52px;
+$primary-color: #0360a5;
+$accent-color: #f6f7f9;
+$background-color: #fff;
+$font-color: #888;
+
+@mixin chabox-container {
+  display: flex;
+  position: absolute;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  flex-direction: column;
+}
+
+@mixin chatbox-header {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: $base-dimension;
+  color: $background-color;
+  background-color: $primary-color;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin chatbox-main {
+  box-sizing: border-box;
+  width: 100%;
+  padding: calc(2 * #{$base-dimension}) #{$base-dimension};
+  line-height: calc(#{$base-dimension} + #{$base-dimension} / 2);
+  color: $font-color;
+  text-align: center;
+}
+
+@mixin chatbox-footer {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: $base-dimension;
+  border-top: 1px solid #ddd;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin chatbox-floating-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: $base-button-size;
+  height: $base-button-size;
+  color: $background-color;
+  background-color: $primary-color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.15);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-color: $accent-color;
+}
+
+h1 {
+  margin: 0;
+  font-size: $base-dimension;
+  line-height: 1;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  outline: 0 !important;
+  cursor: pointer;
+
+  &.chatbox-open {
+    @include chatbox-floating-button;
+    margin: $base-dimension;
+  }
+
+  &.chatbox-close {
+    @include chatbox-floating-button;
+    display: none;
+    margin: $base-dimension calc(2 * #{$base-dimension} + #{$base-button-size})
+      $base-dimension $base-dimension;
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  height: calc(#{$base-dimension} + #{$base-dimension} / 2);
+  padding: 0 calc(#{$base-dimension} / 2);
+  font-family: inherit;
+  font-size: $base-dimension;
+  line-height: calc(#{$base-dimension} + #{$base-dimension} / 2);
+  color: $font-color;
+  background-color: none;
+  border: 0;
+  outline: 0 !important;
+  resize: none;
+  overflow: hidden;
+
+  &::placeholder {
+    color: $font-color;
+  }
+}
+
+.chatbox-popup {
+  @include chabox-container;
+  display: none;
+  bottom: calc(2 * #{$base-dimension} + #{$base-button-size});
+  right: $base-dimension;
+  width: $base-height;
+  height: auto;
+  background-color: $background-color;
+  border-radius: $base-dimension;
+
+  .chatbox-popup__header {
+    @include chatbox-header;
+    border-top-right-radius: $base-border-radius;
+    border-top-left-radius: $base-border-radius;
+
+    .chatbox-popup__avatar {
+      margin-top: -32px;
+      background-color: $primary-color;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+    }
+  }
+
+  .chatbox-popup__main {
+    @include chatbox-main;
+  }
+
+  .chatbox-popup__footer {
+    @include chatbox-footer;
+    border-bottom-right-radius: $base-border-radius;
+    border-bottom-left-radius: $base-border-radius;
+  }
+}
+
+.chatbox-panel {
+  @include chabox-container;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: $base-height;
+  background-color: $background-color;
+
+  .chatbox-panel__header {
+    @include chatbox-header;
+    flex: 0 0 auto;
+  }
+
+  .chatbox-panel__main {
+    @include chatbox-main;
+    flex: 1 1 auto;
+  }
+
+  .chatbox-panel__footer {
+    @include chatbox-footer;
+    flex: 0 0 auto;
+  }
+}

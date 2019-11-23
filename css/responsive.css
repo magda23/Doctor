@@ -1,0 +1,37 @@
+@media (max-width: 767px){
+	.title-box{
+		width: 200px;
+	}
+	.title-h{
+		font-size: 16px;
+	}
+	.info-a{
+		font-size: 14px;
+	}
+	.message-h{
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+	.message-p{
+		font-size: 14px;
+		line-height: 1.2;
+	}
+	.bg-block{
+		height: 50px;
+	}
+	.footer-a{
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	.about-h{
+		font-size: 18px;
+	}
+	.about-p{
+		font-size: 14px;
+	}
+}
+@media(max-width: 575px){
+	.bg-block{
+		height: 100px;
+	}
+}
